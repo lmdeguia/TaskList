@@ -59,6 +59,6 @@ Much of the functionality here is pretty intuitive to use. However, opening spec
 
 # If (for some reason) you want to download this and run locally
 
-## 1. Have Node.js Installed.
-## 2. Run `npm install`
-## 3. Open `./docs/index.html` in a web browser
+### 1. Have Node.js Installed.
+### 2. Run `npm install`
+### 3. Open `./docs/index.html` in a web browser
