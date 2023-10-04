@@ -57,8 +57,6 @@ Much of the functionality here is pretty intuitive to use. However, opening spec
 ![Alt Text](./img/openTask23.png)
 
 
-# If (for some reason) you want to download this and run locally
+# If (for some reason) you want to download this and run locally, CAREFULLY follow the steps below
 
-### 1. Have Node.js Installed.
-### 2. Run `npm install`
-### 3. Open `./docs/index.html` in a web browser
+### 1. Open `./docs/index.html` in a web browser
