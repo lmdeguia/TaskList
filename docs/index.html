@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link  rel="stylesheet" href="index.css"/>
+  <title>Todo</title>
+</head>
+<body>
+
+
+
+  <div class="sideNavContainer">
+    <div class="sideNav">
+
+      <div class="sideNavTop">
+        <div class="sideNavSection sideNavCloseContainer">
+          <div id="sideNavClose">
+            &times;
+          </div>
+        </div>
+        <div class="sideNavSection sideNavHeading">
+          <h1 class="siteTitle">Task Lists</h1>
+        </div>
+      </div>
+
+      <div class="sideNavSection taskViews">
+        <div class="taskViewItem sideNav-select-item allTasks">
+          <h3>All Tasks</h3>
+        </div>
+
+        <div class="taskViewItem sideNav-select-item tasksToday">
+          <h3>Today</h3>
+        </div>
+
+        <div class="taskViewItem sideNav-select-item tasksThisWeek">
+          <h3>This Week</h3>
+        </div>
+      </div>
+
+
+
+      <div class="lists-collection-container">
+        <div class="sideNavSection sideNavHeading lists-heading">
+          <h2 class="listsHeadingTitle">Lists</h2>
+          <!-- <div class="listsHeadingIconContainer">
+            <svg class="collectionOptionsIcon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path class="collectionOptionsIcon" fill-rule="evenodd" clip-rule="evenodd" d="M7.865 11.153c1.03 0 1.864.8 1.864 1.787 0 .987-.835 1.787-1.864 1.787-1.03 0-1.865-.8-1.865-1.787 0-.987.835-1.787 1.865-1.787zm0-5.566c1.03 0 1.864.8 1.864 1.787 0 .987-.835 1.787-1.864 1.787C6.835 9.16 6 8.36 6 7.374c0-.987.835-1.787 1.865-1.787zm1.871-3.8C9.736.8 8.901 0 7.871 0S6.007.8 6.007 1.787c0 .987.835 1.787 1.864 1.787 1.03 0 1.865-.8 1.865-1.787z" fill="black">
+              </path>
+            </svg>
+          </div> -->
+        </div>
+
+        <div class="lists-collection-wrapper">
+          <!-- insert generated view items here -->
+        </div>
+
+        <div class="createListsBtnContainer">
+          <div class="createListsBtn">
+            <h3><span>+</span> Create List</h3>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+  <div class="sideNav-icon-container">
+    <svg class="sideNav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path class="sideNav-icon" fill="white" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+  </div>
+
+  
+  
+  <div class="page-container">
+    <div class="content-container">
+      <div class="options-modal-container">
+
+      </div>
+      <div class="content">
+    
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="filter-modal-container">
+    <div class="filter-modal">
+      <div class="filter-modal-item select-text">Filter By</div>
+
+      <div class="filter-modal-item select-item select-priority">
+        <div class="filter-modal-item-child select-text">Priority</div>
+        <div class="filter-modal-item-child filter-modal-icon-container">
+          <div class="filter-modal-item-child ascendingIconContainer priorityAscendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M16.763 3.289a.75.75 0 0 1 .837.261l3 4a.75.75 0 1 1-1.2.9l-1.65-2.2V20a.75.75 0 1 1-1.5 0V4a.75.75 0 0 1 .513-.711ZM13 8.75H4v-1.5h9v1.5Zm0 5H6v-1.5h7v1.5Zm0 5H8v-1.5h5v1.5Z" clip-rule="evenodd"/></svg></div>
+          <div class="filter-modal-item-child descendingIconContainer priorityDescendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M17 3.25a.75.75 0 0 1 .75.75v13.75l1.65-2.2a.75.75 0 1 1 1.2.9l-3 4a.75.75 0 0 1-1.35-.45V4a.75.75 0 0 1 .75-.75ZM7.25 6A.75.75 0 0 1 8 5.25h5a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 6Zm-2 5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75Zm-2 5a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></div>
+        </div>
+      </div>
+
+      
+      <div class="filter-modal-item select-item select-createdDate">
+        <div class="filter-modal-item-child select-text">Created Date</div>
+        <div class="filter-modal-item-child filter-modal-icon-container">
+          <div class="filter-modal-item-child ascendingIconContainer createdDateAscendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M16.763 3.289a.75.75 0 0 1 .837.261l3 4a.75.75 0 1 1-1.2.9l-1.65-2.2V20a.75.75 0 1 1-1.5 0V4a.75.75 0 0 1 .513-.711ZM13 8.75H4v-1.5h9v1.5Zm0 5H6v-1.5h7v1.5Zm0 5H8v-1.5h5v1.5Z" clip-rule="evenodd"/></svg></div>
+          <div class="filter-modal-item-child descendingIconContainer createdDateDescendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M17 3.25a.75.75 0 0 1 .75.75v13.75l1.65-2.2a.75.75 0 1 1 1.2.9l-3 4a.75.75 0 0 1-1.35-.45V4a.75.75 0 0 1 .75-.75ZM7.25 6A.75.75 0 0 1 8 5.25h5a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 6Zm-2 5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75Zm-2 5a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></div>
+        </div>
+      </div>
+
+      <div class="filter-modal-item select-item select-dueDate">
+        <div class="filter-modal-item-child select-text">Due Date</div>
+        <div class="filter-modal-item-child filter-modal-icon-container">
+          <div class="filter-modal-item-child ascendingIconContainer dateAscendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M16.763 3.289a.75.75 0 0 1 .837.261l3 4a.75.75 0 1 1-1.2.9l-1.65-2.2V20a.75.75 0 1 1-1.5 0V4a.75.75 0 0 1 .513-.711ZM13 8.75H4v-1.5h9v1.5Zm0 5H6v-1.5h7v1.5Zm0 5H8v-1.5h5v1.5Z" clip-rule="evenodd"/></svg></div>
+          <div class="filter-modal-item-child descendingIconContainer dateDescendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M17 3.25a.75.75 0 0 1 .75.75v13.75l1.65-2.2a.75.75 0 1 1 1.2.9l-3 4a.75.75 0 0 1-1.35-.45V4a.75.75 0 0 1 .75-.75ZM7.25 6A.75.75 0 0 1 8 5.25h5a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 6Zm-2 5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75Zm-2 5a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></div>
+        </div>
+      </div>
+
+      <div class="filter-modal-item select-item select-list" style="display: none;">
+        <div class="filter-modal-item-child select-text">List</div>
+        <div class="filter-modal-item-child filter-modal-icon-container">
+          <div class="filter-modal-item-child ascendingIconContainer listAscendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M16.763 3.289a.75.75 0 0 1 .837.261l3 4a.75.75 0 1 1-1.2.9l-1.65-2.2V20a.75.75 0 1 1-1.5 0V4a.75.75 0 0 1 .513-.711ZM13 8.75H4v-1.5h9v1.5Zm0 5H6v-1.5h7v1.5Zm0 5H8v-1.5h5v1.5Z" clip-rule="evenodd"/></svg></div>
+          <div class="filter-modal-item-child descendingIconContainer listDescendingIconContainer"><svg class="filter-modal-item-child" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="filter-modal-item-child" fill="currentColor" fill-rule="evenodd" d="M17 3.25a.75.75 0 0 1 .75.75v13.75l1.65-2.2a.75.75 0 1 1 1.2.9l-3 4a.75.75 0 0 1-1.35-.45V4a.75.75 0 0 1 .75-.75ZM7.25 6A.75.75 0 0 1 8 5.25h5a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 6Zm-2 5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75Zm-2 5a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="dropdown-modal-container">
+    <div class="dropdown-modal">
+      <div class="dropdown-item view-item">View Item</div>
+      <div class="dropdown-item del-item">Delete Item</div>
+    </div>
+  </div>
+
+  <div class="list-dropdown-modal-container">
+    <div class="list-dropdown-modal">
+      <div class="list-dropdown-item view-list">View List</div>
+      <div class="list-dropdown-item del-list">Delete List</div>
+    </div>
+  </div>
+
+  <div class="popup-modal-canvas">
+
+  </div>
+
+  <div class="create-list-modal-container">
+    <div class="create-list-modal">
+
+      <div class="new-list-title-label-container">
+        <h3>Create New List</h3>
+      </div>
+      <div class="new-list-title-container">
+        <input type="text" class="new-list-title" placeholder="List Name" spellcheck="false"/>
+      </div>
+      <div class="new-list-buttons-container">
+
+        <div class="new-list-button-container new-list-cancel-container">
+          <div class="new-list-button new-list-cancel">Cancel</div>
+        </div>
+
+        <div class="new-list-button-container new-list-submit-container">
+          <div class="new-list-button new-list-submit">Add</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="view-detail-modal-container">
+    <div class="view-detail-modal">
+
+    </div>
+  </div>
+
+
+
+  <script src="sideNav.js"></script>
+  <script src="bundle.js"></script>
+
+  <script>
+    const addList = document.querySelector('.createListsBtn');
+    const addListContainer = document.querySelector('.createListsBtnContainer');
+
+    function compressBtn(e) {
+      let btn = e.target;
+      while (btn.className !== 'createListsBtn'){
+        btn = btn.parentElement;
+      }
+      btn.style.transform = 'scale(0.98)';
+    }
+
+    function decompressBtn() {
+      let btn = document.querySelector('.createListsBtn');
+      btn.style.removeProperty('transform');
+    }
+
+    addList.addEventListener('mousedown', compressBtn);
+    window.addEventListener('mouseup', decompressBtn);
+
+    const disableItemDropdown = function(e) {
+      const t = e.target;
+      if (!t.classList.contains('dropdown-item')) {
+        const modalContainer = document.querySelector('.dropdown-modal-container');
+        modalContainer.classList.remove('show');
+      }
+    };
+
+    const disableFilterModal = function(e) {
+      const t = e.target;
+      if (!t.classList.contains('filter-modal-item') && !t.classList.contains('filter-modal-item-child')) {
+        const filterContainer = document.querySelector('.filter-modal-container');
+        filterContainer.classList.remove('show');
+        const selectList = document.querySelector('.select-list');
+        selectList.style.display = 'none';
+      }
+    }
+
+    const disableListDropdown = function(e) {
+      const t = e.target;
+      if (!t.classList.contains('list-dropdown-item')) {
+        const listDropdownContainer = document.querySelector('.list-dropdown-modal-container');
+        listDropdownContainer.classList.remove('show');
+      }
+    }
+
+
+
+    window.addEventListener('click', disableFilterModal);
+    window.addEventListener('click', disableItemDropdown);
+    window.addEventListener('click', disableListDropdown);
+
+
+    // const todoList = document.querySelector('.todoList');
+    // todoList.onscroll = disableItemDropdown;
+  </script>
+</body>
+</html>
+

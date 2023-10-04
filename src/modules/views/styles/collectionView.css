@@ -1,0 +1,98 @@
+:root{
+  --item-title-width: 45%;
+}
+
+
+.sideNav-selected-tab{
+  color: #0083ff;
+} 
+
+
+.lists-collection{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+
+.collection-item-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-item{
+  user-select: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  font-weight: bold;
+
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 8px;
+  padding-right: 4px;
+  border: 1px solid transparent;
+}
+
+.collection-item-selected, .collection-item-selected:hover{
+  border: 1px solid #0074e0;
+}
+
+.collection-item-title{
+  font-size: 16px;
+  background-color: transparent;
+  width: var(--item-title-width);
+  border: none;
+  outline: none;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.collection-item-icon-wrapper{
+  width: calc(100% - var(--item-title-width));
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.list-preview-placeholder{
+  background-color: #edf2f7;
+  border: 1px dashed #cbd5e0;
+  border-radius: 12px;
+}
+
+.collection-item:hover > .collection-item-icon-wrapper > .collection-item-icon-container > svg > path{
+  fill: #d5d2d2;
+}
+
+.collection-item:hover > .collection-item-icon-wrapper > .collection-item-icon-container:hover > svg > path{
+  fill: #0074e0;
+}
+
+
+
+
+.listsHeadingIconContainer > svg > path{
+  fill: #d5d2d2;
+}
+
+.listsHeadingIconContainer:hover > svg > path{
+  fill: black;
+}
+
+.listsHeadingIconContainer{
+  cursor: pointer;
+}
